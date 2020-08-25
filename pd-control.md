@@ -1,6 +1,6 @@
 ---
 title: PD Control 使用说明
-aliases: ['/docs-cn/dev/reference/tools/pd-control/']
+aliases: ['/docs-cn/dev/pd-control/','/docs-cn/dev/reference/tools/pd-control/']
 ---
 
 # PD Control 使用说明
@@ -11,7 +11,7 @@ PD Control 是 PD 的命令行工具，用于获取集群状态信息和调整�
 
 ### 使用 TiUP
 
-可直接通过 `tiup ctl pd -- -u http://<pd_ip>:<pd_port> [-i]` 使用。
+可直接通过 `tiup ctl pd -u http://<pd_ip>:<pd_port> [-i]` 使用。
 
 ### 下载安装包
 
@@ -440,7 +440,7 @@ config set cluster-version 1.0.8
 
 `enable-placement-rules` 用于开启 placement rules。
 
-### `config placement-rules [disable | enable | load | save | show]`
+### `config placement-rules [disable | enable | load | save | show | rule-group]`
 
 用于配置 Placement Rules。 具体使用说明可参考[Placement Rules 使用文档](/configure-placement-rules.md)。
 
